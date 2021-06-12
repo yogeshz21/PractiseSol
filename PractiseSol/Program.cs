@@ -10,16 +10,17 @@ namespace PractiseSol
             //  ************* INTERFACE EXP *************
             //  *****************************************
             //  interface can have static field - if static is given then it throws compile error
+            // Test T = new();
+            // T.getMethod();
 
-            //Test T = new();
-            //T.getMethod();
+
 
             //  ************* ABSTRACT EXP **************
             //  *****************************************
             // abstract can have paramterless constructor
-            //A s = new Sample();
-            //s.TestMethod(2, 3);
-            Sample s = new Sample();          
+            // A s = new Sample();
+            // s.TestMethod(2, 3);
+            // Sample s = new Sample();          
             Console.ReadKey();
         }
 
