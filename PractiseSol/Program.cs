@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace PractiseSol
 {
@@ -6,10 +7,18 @@ namespace PractiseSol
     {
         static void Main(string[] args)
         {
-            A s = new Sample();
-            s.TestMethod(2,3);
+
+            Test T = new();
+            T.getMethod();
+            //  ************* ABSTRACT EXP **************
+            //  *****************************************
+            //A s = new Sample();
+            //s.TestMethod(2, 3);
+            
             Console.ReadKey();
         }
+
+        #region ABSTRACT EXP
 
         abstract class A
         {
@@ -20,9 +29,11 @@ namespace PractiseSol
 
             public virtual void TestMethod(int i, int j, int k)
             {
-                Console.WriteLine("class A => overload TestMethod()");               
+                Console.WriteLine("class A => overload TestMethod()");
             }
             public abstract void TestMethodB();
+
+
         }
 
         abstract class B
@@ -45,5 +56,32 @@ namespace PractiseSol
                 Console.WriteLine("class SAMPLE => TestMethodB()");
             }
         }
+        #endregion
+
+        #region INTERFACE EXP
+
+        interface ITestInterface
+        {
+            static int a;
+
+            void getMethod();
+            string getName();
+        }
+
+        class Test : ITestInterface
+        {
+
+            public void getMethod()
+            {
+                ITestInterface.a = 10;
+                Console.WriteLine("ITestInterface.a => " + ITestInterface.a);
+            }
+
+            public string getName()
+            {
+                throw new NotImplementedException();
+            }
+        }
+        #endregion
     }
 }
