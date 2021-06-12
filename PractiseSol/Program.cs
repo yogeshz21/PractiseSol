@@ -7,14 +7,19 @@ namespace PractiseSol
     {
         static void Main(string[] args)
         {
+            //  ************* INTERFACE EXP *************
+            //  *****************************************
+            //  interface can have static field - if static is given then it throws compile error
 
-            Test T = new();
-            T.getMethod();
+            //Test T = new();
+            //T.getMethod();
+
             //  ************* ABSTRACT EXP **************
             //  *****************************************
+            // abstract can have paramterless constructor
             //A s = new Sample();
             //s.TestMethod(2, 3);
-            
+            Sample s = new Sample();          
             Console.ReadKey();
         }
 
@@ -22,6 +27,16 @@ namespace PractiseSol
 
         abstract class A
         {
+            public A()
+            {
+                Console.WriteLine("Abstract class parameterless constructor");
+            }
+
+            public A(string str = "test")
+            {
+                Console.WriteLine("Abstract class parameter constructor STRING => " + str);
+            }
+
             public virtual void TestMethod(int i, int j)
             {
                 Console.WriteLine("class A => TestMethod()");
@@ -46,6 +61,10 @@ namespace PractiseSol
 
         class Sample : A
         {
+            public Sample(): base("test ctor")
+            {
+
+            }
             public override void TestMethod(int a, int b)
             {
                 Console.WriteLine("class SAMPLE => TestMethod()");
