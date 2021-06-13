@@ -20,7 +20,39 @@ namespace PractiseSol
             // abstract can have paramterless constructor
             // A s = new Sample();
             // s.TestMethod(2, 3);
-            // Sample s = new Sample();          
+            // Sample s = new Sample();
+            // 
+            #region TRY-CATCH EXAMPLE
+            
+                try
+                {
+                    //code that may raise an exception
+                    string str = "";
+                    str = null;
+                    Console.WriteLine("String=> " + str);
+                }            
+                catch (NullReferenceException nullEx)
+                {
+                    Console.WriteLine(nullEx.Message);
+                }
+                catch (InvalidCastException inEx)
+                {
+                    Console.WriteLine(inEx.Message);
+                }
+                catch
+                {
+                    // General Catch block 
+                    // this catch block must be last block
+                }
+                finally
+                {
+                    //FINALLY block must be below Catch block either gives compile error               
+                    //FINALLY block does not have return, break, continue keyword , either gives compile time error
+                    // Multiple finaalt blocks not allowed
+                    Console.WriteLine("in finally block ");
+                }
+            #endregion
+
             Console.ReadKey();
         }
 
