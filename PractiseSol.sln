@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PractiseSol", "PractiseSol\PractiseSol.csproj", "{AE2392F8-DA11-4F4A-9381-83C6B6D496B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PractiseSol", "PractiseSol\PractiseSol.csproj", "{AE2392F8-DA11-4F4A-9381-83C6B6D496B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeWebAppMVC", "PracticeWebAppMVC\PracticeWebAppMVC.csproj", "{94115503-51DE-4F2E-ADA0-EB30861720A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeWebAppMVC.Tests", "PracticeWebAppMVC.Tests\PracticeWebAppMVC.Tests.csproj", "{8EEF0F8D-B6B1-4D43-9B58-270721AC1AB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{AE2392F8-DA11-4F4A-9381-83C6B6D496B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE2392F8-DA11-4F4A-9381-83C6B6D496B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE2392F8-DA11-4F4A-9381-83C6B6D496B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94115503-51DE-4F2E-ADA0-EB30861720A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94115503-51DE-4F2E-ADA0-EB30861720A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94115503-51DE-4F2E-ADA0-EB30861720A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94115503-51DE-4F2E-ADA0-EB30861720A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EEF0F8D-B6B1-4D43-9B58-270721AC1AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EEF0F8D-B6B1-4D43-9B58-270721AC1AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EEF0F8D-B6B1-4D43-9B58-270721AC1AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EEF0F8D-B6B1-4D43-9B58-270721AC1AB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
